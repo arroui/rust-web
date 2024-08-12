@@ -1,0 +1,142 @@
+/* Product Card section */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0px 1px 10px 0px rgba(46, 51, 51, 0.18);
+  background: white;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 200ms ease-in;
+}
+
+.card:hover {
+  border-color: #ddd;
+  transition: background, border-color 300ms;
+  transform: scale(1.02);
+}
+
+.card-image {
+  width: 80%;
+  height: 150px;
+  margin: 0 auto !important;
+  object-fit: contain;
+}
+
+.card-price {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.card-title {
+  margin-top: 10px;
+}
+
+.cart-button {
+  width: 100%;
+  height: 25;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  background: #1976d2;
+  color: white;
+  transition: background 300ms;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.cart-button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.15em);
+}
+/* End Product Card section */
+/* Header section */
+.header {
+  height: 44px;
+  background: #1976d2;
+  color: white;
+  box-shadow: 0px 5px 12px 0px rgba(46, 51, 51, 0.18);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.header-cart-value {
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+/* End Header section */
+/* Checkout Page section */
+.table {
+  width:90%;
+  min-height: 90vh;
+  margin: 40px auto 0;
+}
+
+.table-header {
+  display:flex;
+  width:100%;
+}
+
+.table-row {
+  display:flex;
+  width:100%;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.table-data, .header__item {
+  flex: 1 1 20%;
+  text-align:center;
+}
+
+.header__item {
+  text-transform:uppercase;
+}
+
+.totalprice {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 25px;
+}
+
+.card_image {
+  width: 80%;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto !important;
+}
+/* End Checkout Page section */
